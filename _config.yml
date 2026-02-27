@@ -1,0 +1,23 @@
+title: Trevor Turk
+description: Engineering learnings from building Hello Weather
+url: https://trevorturk.github.io
+author: Trevor Turk
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Permalinks without dates (e.g., /heroku-capacity/ not /2026/02/27/heroku-capacity/)
+permalink: /:title/
+
+# Feed settings
+feed:
+  path: feed.xml
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
