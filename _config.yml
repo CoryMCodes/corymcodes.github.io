@@ -7,14 +7,8 @@ repository: corymcodes/corymusick.github.io
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-tailwind
   - jekyll-feed
   - jekyll-seo-tag
-
-tailwind:
-  input: assets/css/app.css
-  output: _site/assets/css/app.css
-  minify: true
 
 # Permalinks without dates (e.g., /heroku-capacity/ not /2026/02/27/heroku-capacity/)
 permalink: /:title/
@@ -30,3 +24,5 @@ exclude:
   - Gemfile.lock
   - vendor
   - .playwright-mcp
+  - _tailwind
+  - tailwind.config.js
