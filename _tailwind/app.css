@@ -3,6 +3,34 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --color-ink: 255 255 255;
+    --color-surface: 255 255 255;
+    --color-elevated: 248 250 252;
+    --color-line: 226 232 240;
+    --color-accent: 5 150 105;
+    --color-accent-hover: 4 120 87;
+    --color-text-primary: 51 65 85;
+    --color-text-secondary: 100 116 139;
+    --grid-line: 226 232 240;
+    --hero-glow: rgba(5, 150, 105, 0.10);
+    --shadow-glow: 0 1px 2px rgba(15, 23, 42, 0.06), 0 18px 60px rgba(15, 23, 42, 0.08);
+  }
+
+  .dark {
+    --color-ink: 15 23 42;
+    --color-surface: 30 41 59;
+    --color-elevated: 51 65 85;
+    --color-line: 51 65 85;
+    --color-accent: 16 185 129;
+    --color-accent-hover: 52 211 153;
+    --color-text-primary: 248 250 252;
+    --color-text-secondary: 148 163 184;
+    --grid-line: 51 65 85;
+    --hero-glow: rgba(16, 185, 129, 0.12);
+    --shadow-glow: 0 0 0 1px rgba(16, 185, 129, 0.10), 0 20px 80px rgba(2, 6, 23, 0.34);
+  }
+
   html {
     @apply bg-ink text-textPrimary antialiased;
   }
@@ -10,8 +38,8 @@
   body {
     @apply min-h-screen bg-ink font-sans text-textPrimary;
     background-image:
-      linear-gradient(rgba(55, 65, 81, 0.12) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(55, 65, 81, 0.12) 1px, transparent 1px);
+      linear-gradient(rgb(var(--grid-line) / 0.14) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(var(--grid-line) / 0.14) 1px, transparent 1px);
     background-size: 44px 44px;
   }
 
@@ -26,7 +54,7 @@
   }
 
   .surface {
-    @apply border border-line/70 bg-surface/70 shadow-glow backdrop-blur;
+    @apply border border-line/70 bg-surface/90 shadow-glow backdrop-blur;
   }
 
   .eyebrow {
@@ -50,7 +78,7 @@
   }
 
   .tag {
-    @apply rounded bg-emerald-400/10 px-2 py-1 font-mono text-xs text-emerald-300;
+    @apply rounded bg-accent/10 px-2 py-1 font-mono text-xs text-accentHover;
   }
 
   .tag-muted {

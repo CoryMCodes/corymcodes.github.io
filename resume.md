@@ -9,8 +9,8 @@ permalink: /resume/
   <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
     <div>
       <p class="eyebrow">Resume</p>
-      <h1 class="mt-4 text-5xl font-semibold tracking-tight">Systems-focused Rails engineer.</h1>
-      <p class="mt-4 max-w-3xl leading-7 text-textSecondary">I build Rails systems, APIs, operational platforms, and workflow automation for messy real-world domains. My strongest work sits at the intersection of backend architecture, product judgment, performance, and reliable execution.</p>
+      <h1 class="mt-4 text-5xl font-semibold tracking-tight">Product-minded Rails engineer.</h1>
+      <p class="mt-4 max-w-3xl leading-7 text-textSecondary">I build Rails applications, APIs, operational platforms, and workflow automation for messy real-world domains. My strongest work sits at the intersection of product judgment, backend architecture, performance, and reliable execution.</p>
     </div>
     <a class="button-secondary" href="mailto:cory.musick37@gmail.com">Contact</a>
   </div>
@@ -105,7 +105,7 @@ permalink: /resume/
         <h2 class="text-lg font-semibold">Core Competencies</h2>
         <div class="mt-5 space-y-5 text-sm leading-6 text-textSecondary">
           <p><span class="block font-semibold text-textPrimary">Backend</span>Ruby on Rails, REST APIs, background jobs, async workflows, idempotency, failure handling</p>
-          <p><span class="block font-semibold text-textPrimary">Data & Systems</span>PostgreSQL schema design, query optimization, large operational datasets, data access patterns</p>
+          <p><span class="block font-semibold text-textPrimary">Data & Workflows</span>PostgreSQL schema design, query optimization, large operational datasets, data access patterns</p>
           <p><span class="block font-semibold text-textPrimary">Frontend</span>React integrations, Hotwire, Turbo, Stimulus, responsive UX, performance optimization</p>
           <p><span class="block font-semibold text-textPrimary">Product Work</span>Ambiguous requirements, stakeholder collaboration, workflow design, technical direction</p>
         </div>
@@ -130,14 +130,14 @@ permalink: /resume/
       </section>
 
       <section class="surface rounded-2xl p-6">
-        <h2 class="text-lg font-semibold">Systems / Architecture Work</h2>
+        <h2 class="text-lg font-semibold">Product / Platform Work</h2>
         <ul class="mt-5 list-disc space-y-3 pl-5 text-sm leading-6 text-textSecondary">
           <li>Operational tracking platforms</li>
-          <li>Scheduling systems for unreliable field environments</li>
+          <li>Scheduling products for unreliable field environments</li>
           <li>REST APIs consumed across frontend teams</li>
           <li>PostgreSQL data modeling for complex workflows</li>
           <li>Asynchronous processing with retries and idempotency</li>
-          <li>Developer tooling and AI-assisted orchestration experiments</li>
+          <li>Developer tooling and AI-assisted product workflow experiments</li>
         </ul>
       </section>
 
@@ -145,7 +145,7 @@ permalink: /resume/
         <h2 class="text-lg font-semibold">Featured Work</h2>
         <a class="mt-4 block rounded-xl border border-line bg-ink/50 p-4 transition hover:border-accent/60" href="/projects/seederkit/">
           <span class="font-semibold text-textPrimary">SeederKit</span>
-          <span class="mt-2 block text-sm leading-6 text-textSecondary">AI-assisted seed data generation with schema-aware planning and deterministic execution.</span>
+          <span class="mt-2 block text-sm leading-6 text-textSecondary">A developer tool for realistic Rails seed scenarios with schema-aware planning and predictable execution.</span>
         </a>
       </section>
     </aside>

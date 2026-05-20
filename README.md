@@ -2,23 +2,23 @@
 
 Personal engineering site and devlog for Cory Musick.
 
-This repo powers `corymusick.github.io`, a content-first GitHub Pages site focused on practical systems engineering, Rails infrastructure, AI-assisted developer tooling, and the process of building SeederKit in public.
+This repo powers `corymusick.github.io`, a content-first GitHub Pages portfolio focused on product engineering, Rails applications, workflow automation, and practical AI-assisted developer tooling.
 
-The goal is not AI-generated content for its own sake. The goal is to turn real engineering work into useful architecture notes, implementation journals, debugging stories, and technical writeups that show the reasoning behind the system.
+The goal is not AI-generated content for its own sake. The goal is to turn real product and engineering work into useful project notes, implementation journals, debugging stories, and technical writeups that show the reasoning behind the work.
 
 ## Site Direction
 
-This site should feel like an engineering lab notebook from a systems-focused product engineer:
+This site should feel like a product engineering portfolio with a thoughtful technical devlog:
 
 - professional bio and engineering philosophy
 - resume and project pages
-- featured work, especially SeederKit
-- technical devlog posts about architecture and implementation decisions
-- practical notes on Rails, AI orchestration, deterministic workflows, validation, schema-aware systems, and developer tooling
+- featured product and tooling work
+- technical devlog posts about product decisions, architecture, and implementation tradeoffs
+- practical notes on Rails, workflow automation, AI-assisted tooling, validation, schema-aware tools, and developer experience
 
 ## SeederKit Devlog
 
-SeederKit is the main source of technical material for the blog. Posts should draw from real implementation work in:
+SeederKit is the current main source of technical material for the devlog. Posts should draw from real implementation work in:
 
 ```txt
 ~/code/seeder_kit/
@@ -30,7 +30,7 @@ Good post topics include:
 - scenario generation vs. fake data generation
 - designing deterministic AI workflows
 - why AI should not generate arbitrary Ruby
-- building schema-aware orchestration systems
+- building schema-aware developer tools
 - extracting Rails domain graphs dynamically
 - designing a scenario DSL
 - validating structured AI outputs
@@ -106,6 +106,6 @@ Build in public.
 
 Document real engineering.
 
-Share reusable implementation patterns.
+Share reusable product and implementation patterns.
 
-Focus on systems thinking over hype.
+Focus on useful products over hype.

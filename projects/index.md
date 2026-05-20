@@ -8,7 +8,7 @@ permalink: /projects/
 <section class="shell py-14 lg:py-20">
   <div class="max-w-3xl">
     <p class="eyebrow">Projects</p>
-    <h1 class="mt-4 text-5xl font-semibold tracking-tight">Tools and experiments focused on developer productivity, AI orchestration, and practical automation.</h1>
+    <h1 class="mt-4 text-5xl font-semibold tracking-tight">Products, tools, and workflow experiments built around real operational problems.</h1>
   </div>
 
   <div class="mt-10 grid gap-6">
@@ -24,7 +24,7 @@ permalink: /projects/
         </div>
         <div>
           <h2 class="text-2xl font-semibold">SeederKit</h2>
-          <p class="mt-3 max-w-3xl leading-7 text-textSecondary">AI-assisted seed data generation for Rails applications with deterministic execution, schema awareness, and scenario-based planning.</p>
+          <p class="mt-3 max-w-3xl leading-7 text-textSecondary">A developer tool for generating realistic Rails seed scenarios with schema-aware planning, validation, and predictable execution.</p>
           <div class="mt-5 flex flex-wrap gap-2">
             <span class="tag-muted">Rails</span>
             <span class="tag-muted">Ruby</span>
@@ -42,7 +42,7 @@ permalink: /projects/
 
     <article class="surface rounded-2xl p-8">
       <div class="grid gap-8 md:grid-cols-[96px_1fr] md:items-start">
-        <div class="flex h-20 w-20 items-center justify-center rounded-xl border border-emerald-400/40 bg-emerald-400/10 text-emerald-300">
+        <div class="flex h-20 w-20 items-center justify-center rounded-xl border border-accent/40 bg-accent/10 text-accentHover">
           <svg viewBox="0 0 24 24" class="h-11 w-11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M4 17 10 11 4 5"></path>
             <path d="M12 19h8"></path>
@@ -50,7 +50,7 @@ permalink: /projects/
         </div>
         <div>
           <h2 class="text-2xl font-semibold">Workflow Scripts</h2>
-          <p class="mt-3 max-w-3xl leading-7 text-textSecondary">Small automation utilities and publishing workflows for turning engineering notes, implementation context, and code changes into useful documentation.</p>
+          <p class="mt-3 max-w-3xl leading-7 text-textSecondary">Small automation utilities and publishing workflows for turning product notes, implementation context, and code changes into useful documentation.</p>
           <div class="mt-5 flex flex-wrap gap-2">
             <span class="tag-muted">Bash</span>
             <span class="tag-muted">Ruby</span>

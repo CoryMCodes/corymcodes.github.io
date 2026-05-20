@@ -11,21 +11,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ink: "#0B1020",
-        surface: "#111827",
-        elevated: "#1F2937",
-        line: "#374151",
-        accent: "#7C3AED",
-        accentHover: "#8B5CF6",
-        textPrimary: "#F9FAFB",
-        textSecondary: "#9CA3AF"
+        ink: "rgb(var(--color-ink) / <alpha-value>)",
+        surface: "rgb(var(--color-surface) / <alpha-value>)",
+        elevated: "rgb(var(--color-elevated) / <alpha-value>)",
+        line: "rgb(var(--color-line) / <alpha-value>)",
+        accent: "rgb(var(--color-accent) / <alpha-value>)",
+        accentHover: "rgb(var(--color-accent-hover) / <alpha-value>)",
+        textPrimary: "rgb(var(--color-text-primary) / <alpha-value>)",
+        textSecondary: "rgb(var(--color-text-secondary) / <alpha-value>)"
       },
       fontFamily: {
         sans: ["Inter", "Geist", "IBM Plex Sans", "ui-sans-serif", "system-ui", "sans-serif"],
         mono: ["JetBrains Mono", "Berkeley Mono", "IBM Plex Mono", "ui-monospace", "SFMono-Regular", "monospace"]
       },
       boxShadow: {
-        glow: "0 0 0 1px rgba(124, 58, 237, 0.18), 0 20px 80px rgba(0, 0, 0, 0.35)"
+        glow: "var(--shadow-glow)"
       }
     }
   },

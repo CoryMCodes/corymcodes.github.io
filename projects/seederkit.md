@@ -10,7 +10,7 @@ permalink: /projects/seederkit/
     <div>
       <p class="eyebrow">Featured Project</p>
       <h1 class="mt-4 text-5xl font-semibold tracking-tight">SeederKit</h1>
-      <p class="mt-5 max-w-3xl text-lg leading-8 text-textSecondary">AI-assisted scenario orchestration for Rails applications. SeederKit is focused on schema-aware planning, structured validation, and deterministic execution instead of arbitrary generated application code.</p>
+      <p class="mt-5 max-w-3xl text-lg leading-8 text-textSecondary">A Rails developer tool for creating realistic seed scenarios. SeederKit explores how AI can support product workflows when it is constrained by schema awareness, validation, and predictable execution.</p>
       <div class="mt-8 flex flex-wrap gap-3">
         <a class="button-primary" href="https://github.com/corymcodes/seeder_kit">View on GitHub</a>
         <a class="button-secondary" href="/devlog/">Read Architecture Posts</a>
@@ -26,7 +26,7 @@ permalink: /projects/seederkit/
         <div class="pl-6 font-mono text-textSecondary">&darr;</div>
         <div class="rounded-lg border border-accent/50 bg-accent/10 p-4 font-mono text-sm text-accentHover">scenario planner</div>
         <div class="pl-6 font-mono text-textSecondary">&darr;</div>
-        <div class="rounded-lg border border-emerald-400/40 bg-emerald-400/10 p-4 font-mono text-sm text-emerald-300">deterministic executor</div>
+        <div class="rounded-lg border border-accent/40 bg-accent/10 p-4 font-mono text-sm text-accentHover">deterministic executor</div>
       </div>
     </aside>
   </div>
@@ -52,14 +52,14 @@ permalink: /projects/seederkit/
 
   <div class="prose-cmc mt-14 max-w-3xl">
     <h2>The Thesis</h2>
-    <p>Seed data tooling breaks down when applications need believable, connected scenarios instead of isolated fake records. SeederKit explores a more reliable path: let AI assist with intent and planning, but keep validation and execution inside deterministic Rails code.</p>
+    <p>Seed data tooling breaks down when product teams need believable, connected scenarios instead of isolated fake records. SeederKit explores a more useful path: let AI assist with intent and planning, but keep validation and execution inside predictable Rails code.</p>
 
     <h2>What The Devlog Will Cover</h2>
     <ul>
       <li>Why scenario generation is different from fake data generation.</li>
       <li>How schema readers and domain graphs shape safer AI workflows.</li>
       <li>Why structured validation matters before anything touches a database.</li>
-      <li>How deterministic execution keeps AI-assisted tooling debuggable.</li>
+      <li>How predictable execution keeps AI-assisted tooling debuggable.</li>
     </ul>
   </div>
 </section>
