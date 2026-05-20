@@ -92,9 +92,9 @@ Use timestamps in `date` when publishing multiple posts on the same day so Jekyl
 
 ## CSS
 
-GitHub Pages serves the committed stylesheet at `assets/css/app.css`. Tailwind source lives in `_tailwind/app.css`.
+GitHub Pages serves the committed stylesheet at `assets/css/app.css`. Tailwind source lives in `_tailwind/app.css`; native GitHub Pages does not compile Tailwind from source.
 
-After changing Tailwind classes or source styles, rebuild the committed stylesheet:
+After changing Tailwind classes or source styles, rebuild and commit the generated stylesheet:
 
 ```bash
 bundle exec tailwindcss -c tailwind.config.js -i _tailwind/app.css -o assets/css/app.css --minify
