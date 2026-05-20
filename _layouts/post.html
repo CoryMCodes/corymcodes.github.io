@@ -1,9 +1,58 @@
 ---
 layout: default
+nav: devlog
 ---
-<article>
-  <h1>{{ page.title }}</h1>
-  <p class="post-meta">{{ page.date | date: "%B %d, %Y" }}</p>
 
-  {{ content }}
+<article class="shell py-14 lg:py-20">
+  <a href="/devlog/" class="mb-10 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.18em] text-textSecondary transition hover:text-accentHover">
+    <span aria-hidden="true">&larr;</span>
+    Back to Devlog
+  </a>
+
+  <div class="grid gap-12 lg:grid-cols-[minmax(0,760px)_280px] lg:items-start">
+    <div>
+      <p class="font-mono text-sm text-textSecondary">{{ page.date | date: "%B %d, %Y" }}</p>
+      <h1 class="mt-4 max-w-4xl text-4xl font-semibold tracking-tight text-textPrimary sm:text-5xl">{{ page.title }}</h1>
+      {% if page.summary %}
+        <p class="mt-5 max-w-3xl text-lg leading-8 text-textSecondary">{{ page.summary }}</p>
+      {% endif %}
+
+      {% if page.tags %}
+        <div class="mt-6 flex flex-wrap gap-2">
+          {% for tag in page.tags %}
+            <span class="tag-muted">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <div class="prose-cmc mt-12">
+        {{ content }}
+      </div>
+    </div>
+
+    <aside class="space-y-6 lg:sticky lg:top-28">
+      <section class="surface rounded-xl p-6">
+        <h2 class="text-sm font-semibold text-textPrimary">On This Page</h2>
+        <ul class="mt-4 space-y-3 font-mono text-xs text-textSecondary">
+          <li>The Problem</li>
+          <li>Architecture</li>
+          <li>Implementation</li>
+          <li>Tradeoffs</li>
+          <li>Lessons Learned</li>
+        </ul>
+      </section>
+
+      <section class="surface rounded-xl p-6">
+        <h2 class="text-sm font-semibold text-textPrimary">Related</h2>
+        <div class="mt-4 space-y-4">
+          {% assign related_posts = site.posts | where_exp: "post", "post.url != page.url" | slice: 0, 3 %}
+          {% for post in related_posts %}
+            <a href="{{ post.url }}" class="block text-sm text-textSecondary transition hover:text-accentHover">{{ post.title }}</a>
+          {% else %}
+            <p class="text-sm text-textSecondary">More architecture notes are coming soon.</p>
+          {% endfor %}
+        </div>
+      </section>
+    </aside>
+  </div>
 </article>

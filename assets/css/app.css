@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-ink text-textPrimary antialiased;
+  }
+
+  body {
+    @apply min-h-screen bg-ink font-sans text-textPrimary;
+    background-image:
+      linear-gradient(rgba(55, 65, 81, 0.12) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(55, 65, 81, 0.12) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+
+  ::selection {
+    @apply bg-accent/40 text-white;
+  }
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .surface {
+    @apply border border-line/70 bg-surface/70 shadow-glow backdrop-blur;
+  }
+
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.18em] text-accentHover;
+  }
+
+  .nav-link {
+    @apply border-b border-transparent px-1 py-2 text-sm text-textSecondary transition hover:border-accent hover:text-textPrimary;
+  }
+
+  .nav-link-active {
+    @apply border-accent text-accentHover;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-accent px-5 py-3 text-sm font-semibold text-white transition hover:bg-accentHover;
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border border-line px-5 py-3 text-sm font-semibold text-textPrimary transition hover:border-accent hover:text-accentHover;
+  }
+
+  .tag {
+    @apply rounded bg-emerald-400/10 px-2 py-1 font-mono text-xs text-emerald-300;
+  }
+
+  .tag-muted {
+    @apply rounded bg-elevated/80 px-2 py-1 font-mono text-xs text-textSecondary;
+  }
+
+  .prose-cmc {
+    @apply max-w-none text-textSecondary;
+  }
+
+  .prose-cmc h2 {
+    @apply mt-12 text-2xl font-semibold tracking-tight text-textPrimary;
+  }
+
+  .prose-cmc h3 {
+    @apply mt-8 text-lg font-semibold text-textPrimary;
+  }
+
+  .prose-cmc p {
+    @apply mt-4 leading-7;
+  }
+
+  .prose-cmc a {
+    @apply text-accentHover underline decoration-accent/40 underline-offset-4 hover:text-textPrimary;
+  }
+
+  .prose-cmc ul {
+    @apply mt-4 list-disc space-y-2 pl-6;
+  }
+
+  .prose-cmc li {
+    @apply leading-7;
+  }
+
+  .prose-cmc code {
+    @apply rounded border border-line/70 bg-surface px-1.5 py-0.5 font-mono text-sm text-textPrimary;
+  }
+
+  .prose-cmc pre {
+    @apply mt-6 overflow-x-auto rounded-xl border border-line bg-surface p-5 text-sm text-textPrimary;
+  }
+
+  .prose-cmc pre code {
+    @apply border-0 bg-transparent p-0;
+  }
+
+  .prose-cmc blockquote {
+    @apply mt-6 border-l-2 border-accent bg-surface/60 px-5 py-4 text-textPrimary;
+  }
+}

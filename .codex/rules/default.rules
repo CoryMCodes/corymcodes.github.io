@@ -1,10 +1,4 @@
-# Adapted from .claude/settings.json for Codex execpolicy.
-# Mapping:
-# - Claude allow -> decision="allow"
-# - Claude ask -> decision="prompt"
-# - Claude deny -> decision="forbidden"
-# Note: Claude non-Bash capabilities (Read/Edit/Write/etc.) are enforced by Codex sandboxing,
-# not execpolicy command rules.
+# Codex execpolicy command rules for this repository.
 
 # forbid
 prefix_rule(pattern=["bundle", "open"], decision="forbidden")
@@ -17,7 +11,7 @@ prefix_rule(pattern=["git", "push", "-u", "origin", "main"], decision="forbidden
 prefix_rule(pattern=["git", "push", "--set-upstream", "origin", "main"], decision="forbidden")
 prefix_rule(pattern=["git", "push", "--force"], decision="forbidden")
 prefix_rule(pattern=["git", "push", "-f"], decision="forbidden")
-# keep gh api aligned with Claude's GET-only intent
+# keep gh api read-oriented by default
 prefix_rule(pattern=["gh", "api", "--method", "POST"], decision="forbidden")
 prefix_rule(pattern=["gh", "api", "--method", "PUT"], decision="forbidden")
 prefix_rule(pattern=["gh", "api", "--method", "PATCH"], decision="forbidden")
