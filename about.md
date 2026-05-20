@@ -34,7 +34,7 @@ permalink: /about/
 
       <div class="mt-10 grid gap-4 sm:grid-cols-2">
         <div class="surface rounded-xl p-5">
-          <h2 class="font-semibold">Based in Indianapolis, IN</h2>
+          <h2 class="font-semibold">Based in Boise, ID</h2>
           <p class="mt-2 text-sm text-textSecondary">Working on Rails, AI tooling, and practical automation.</p>
         </div>
         <div class="surface rounded-xl p-5">
