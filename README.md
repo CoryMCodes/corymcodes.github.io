@@ -92,6 +92,8 @@ tags: [rails, ai, architecture]
 
 Use timestamps in `date` when publishing multiple posts on the same day so Jekyll ordering stays predictable.
 
+Choose post tags from `_data/devlog_tags.yml`. Only tags marked `filter: true` and used by published posts appear in the Devlog filter UI, which keeps the page focused even as posts accumulate more specific metadata.
+
 ## CSS
 
 GitHub Pages serves the committed stylesheet at `assets/css/app.css`. Tailwind source lives in `_tailwind/app.css`; native GitHub Pages does not compile Tailwind from source.

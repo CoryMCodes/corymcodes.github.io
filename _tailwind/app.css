@@ -77,6 +77,18 @@
     @apply inline-flex items-center justify-center gap-2 rounded-md border border-line px-5 py-3 text-sm font-semibold text-textPrimary transition hover:border-accent hover:text-accentHover;
   }
 
+  .filter-button {
+    @apply rounded-lg border px-4 py-2 text-sm font-semibold transition;
+  }
+
+  .filter-button-active {
+    @apply border-accent bg-accent text-white shadow-glow;
+  }
+
+  .filter-button-inactive {
+    @apply border-line bg-surface/70 text-textSecondary hover:border-accent hover:text-textPrimary;
+  }
+
   .tag {
     @apply rounded bg-accent/10 px-2 py-1 font-mono text-xs text-accentHover;
   }

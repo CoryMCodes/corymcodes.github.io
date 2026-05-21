@@ -51,6 +51,26 @@ Keep examples:
 - reusable
 - safe to publish publicly
 
+## Tags
+
+Use only tag slugs from:
+
+```txt
+_data/devlog_tags.yml
+```
+
+Before generating frontmatter, read that file and choose only tags that are directly relevant to the post.
+
+Tag rules:
+
+- Use tag slugs, not labels.
+- Prefer 2-5 tags.
+- Always include the most specific relevant project/topic tag when available, such as `seederkit`.
+- Include broad filter tags only when they genuinely describe the post, such as `architecture`, `rails`, `ai`, `developer-tooling`, `product-engineering`, or `lessons`.
+- Do not invent new tags in frontmatter.
+- If a needed tag does not exist in `_data/devlog_tags.yml`, mention the proposed new tag separately instead of adding it to the post.
+- Keep the Devlog filter UI clean by treating `filter: true` tags as broad browsing categories and `filter: false` tags as specific metadata.
+
 ## Inputs
 
 This skill may use:
@@ -174,6 +194,7 @@ Prioritize:
    - filename: `_posts/YYYY-MM-DD-slug.md`
    - include frontmatter
    - include timestamps
+   - choose relevant tags only from `_data/devlog_tags.yml`
    - include implementation examples
    - include architectural reasoning
 
@@ -199,7 +220,7 @@ layout: post
 title: "Descriptive Technical Title"
 date: YYYY-MM-DD HH:MM:SS -0600
 summary: "Brief technical summary."
-tags: [rails, ai, architecture]
+tags: [architecture, rails, seederkit]
 ---
 
 ## The Problem

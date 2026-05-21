@@ -3,7 +3,7 @@ layout: post
 title: "Building SeederKit's Schema Reader"
 date: 2026-05-20 16:00:00 -0400
 summary: "How SeederKit turns Active Record reflection into structured context for safer scenario planning and deterministic execution."
-tags: [rails, ai, developer-tooling, seederkit]
+tags: [architecture, rails, ai, developer-tooling, seederkit]
 ---
 
 ## The Problem
