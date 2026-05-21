@@ -102,11 +102,11 @@
   }
 
   .prose-cmc h2 {
-    @apply mt-12 text-2xl font-semibold tracking-tight text-textPrimary;
+    @apply mt-12 scroll-mt-28 text-2xl font-semibold tracking-tight text-textPrimary;
   }
 
   .prose-cmc h3 {
-    @apply mt-8 text-lg font-semibold text-textPrimary;
+    @apply mt-8 scroll-mt-28 text-lg font-semibold text-textPrimary;
   }
 
   .prose-cmc p {
