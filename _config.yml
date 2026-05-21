@@ -25,4 +25,9 @@ exclude:
   - vendor
   - .playwright-mcp
   - _tailwind
+  - node_modules
+  - package.json
+  - package-lock.json
+  - vite.config.js
+  - src
   - tailwind.config.js

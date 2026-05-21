@@ -17,44 +17,7 @@
     } catch (_) {}
   </script>
   <link rel="stylesheet" href="{{ "/assets/css/app.css" | relative_url }}?v={{ site.time | date: "%s" }}">
-  <script type="importmap">
-    {
-      "imports": {
-        "@hotwired/turbo": "https://cdn.jsdelivr.net/npm/@hotwired/turbo@8.0.13/+esm",
-        "@hotwired/stimulus": "https://cdn.jsdelivr.net/npm/@hotwired/stimulus@3.2.2/+esm"
-      }
-    }
-  </script>
-  <script type="module">
-    import "@hotwired/turbo"
-    import { Application, Controller } from "@hotwired/stimulus"
-
-    window.Stimulus = Application.start()
-
-    class NavController extends Controller {
-      static targets = ["menu"]
-
-      toggle() {
-        this.menuTarget.classList.toggle("hidden")
-      }
-    }
-
-    class ThemeController extends Controller {
-      connect() {
-        const stored = localStorage.getItem("corymcodes-theme")
-        if (stored === "light") document.documentElement.classList.remove("dark")
-        else document.documentElement.classList.add("dark")
-      }
-
-      toggle() {
-        document.documentElement.classList.toggle("dark")
-        localStorage.setItem("corymcodes-theme", document.documentElement.classList.contains("dark") ? "dark" : "light")
-      }
-    }
-
-    Stimulus.register("nav", NavController)
-    Stimulus.register("theme", ThemeController)
-  </script>
+  <script type="module" src="{{ "/assets/js/app.js" | relative_url }}?v={{ site.time | date: "%s" }}"></script>
 </head>
 <body data-controller="theme" class="dark:bg-ink">
   <div class="min-h-screen bg-[radial-gradient(circle_at_top_right,var(--hero-glow),transparent_34rem)]">

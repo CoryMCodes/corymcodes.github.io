@@ -1,0 +1,16 @@
+{
+  "name": "corymcodes-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:js": "vite build",
+    "watch:js": "vite build --watch"
+  },
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.2",
+    "@hotwired/turbo": "^8.0.13"
+  },
+  "devDependencies": {
+    "vite": "^7.2.4"
+  }
+}

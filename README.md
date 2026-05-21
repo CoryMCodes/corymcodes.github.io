@@ -64,7 +64,9 @@ When drafting posts:
 
 ```bash
 bundle install
+npm install
 bundle exec tailwindcss -c tailwind.config.js -i _tailwind/app.css -o assets/css/app.css --minify
+npm run build:js
 bundle exec jekyll serve
 ```
 
@@ -98,6 +100,18 @@ After changing Tailwind classes or source styles, rebuild and commit the generat
 
 ```bash
 bundle exec tailwindcss -c tailwind.config.js -i _tailwind/app.css -o assets/css/app.css --minify
+```
+
+## JavaScript
+
+JavaScript is bundled with Vite. Source files live in `src/javascript/` and the committed browser bundle is generated at `assets/js/app.js`.
+
+Stimulus controllers live in `src/javascript/controllers/` and are registered from `src/javascript/application.js`.
+
+After changing JavaScript, rebuild and commit the generated bundle:
+
+```bash
+npm run build:js
 ```
 
 ## Philosophy
